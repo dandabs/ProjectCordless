@@ -1,0 +1,15 @@
+<Page backgroundColor="#e6e6e6" 
+	xmlns="http://schemas.nativescript.org/tns.xsd"
+    navigatingTo="onLoad"
+    class="page">
+	<Page.actionBar>
+		<ActionBar title="{{ name }}" icon="" class="action-bar mainactionbar">
+			<!--<ActionItem ios.systemIcon="14" android.systemIcon="ic_menu_edit" ios.position="left" tap="onHome"></ActionItem>-->
+		</ActionBar>
+	</Page.actionBar>
+
+    <GridLayout>
+    <WebView row="1" loaded="onWebViewLoaded" id="myWebView" src="{{ webViewSrc }}" />
+</GridLayout>
+
+</Page>

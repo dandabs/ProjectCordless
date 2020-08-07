@@ -1,0 +1,20 @@
+<Page class="page" loaded="onNavigatingTo">
+        <ActionBar title="Login" icon="" class="action-bar"></ActionBar>
+
+        <FlexboxLayout class="page">
+        <StackLayout class="form">
+
+        <Label class="header" text="Welcome to Kodoresu"></Label>
+
+<StackLayout class="input-field">
+<TextField id="username" hint="Enter your Minecraft username" class="input input-border" maxLength="16" autocorrect="false" returnPress="onLogin"></TextField>
+</StackLayout>
+
+<StackLayout class="input-field">
+<Button text="Log in" tap="onLogin" class="btn btn-primary"></Button>
+</StackLayout>
+
+        </StackLayout>
+        </FlexboxLayout>
+
+</Page>

@@ -1,0 +1,97 @@
+<Page backgroundColor="#e6e6e6" 
+	xmlns="http://schemas.nativescript.org/tns.xsd" 
+	xmlns:lv="nativescript-ui-listview" navigatingTo="onLoad" class="page" 
+	xmlns:Card="nativescript-cardview"
+	id=" {{ serverid }}">
+	<Page.actionBar>
+		<ActionBar title="{{ name }}" icon="" class="action-bar mainactionbar">
+			<!--<ActionItem ios.systemIcon="14" android.systemIcon="ic_menu_edit" ios.position="left" tap="onHome"></ActionItem>-->
+		</ActionBar>
+	</Page.actionBar>
+
+	    <PullRefresh:PullToRefresh refresh="onRefresh">
+    
+
+	<ScrollView>
+
+		<FlexboxLayout flexWrap="wrap" flexDirection="column" height="100%">
+
+			<!-- Information -->
+
+			<StackLayout class="heading" height="10%">
+				<Label text="{{ 'Hi, ' + username + '!' }}" class="h1 m-10 headingtext abeezee" textWrap="true"/>
+			</StackLayout>
+
+			<!-- Announcements -->
+			<StackLayout id="info" height="20%">
+				<Label text="Recent announcements" class="h2 asap m-20" textWrap="true"/>
+				<GridLayout rows="*">
+					<lv:RadListView id="list-view1" row="0" items="{{ announcements }}" marginRight="-2" itemLoading="{{ onItemLoading }}">
+						<lv:RadListView.listViewLayout>
+							<lv:ListViewStaggeredLayout scrollDirection="Horizontal" spanCount="1" />
+						</lv:RadListView.listViewLayout>
+						<lv:RadListView.itemTemplate>
+							<StackLayout margin="15" borderRadius="10">
+								<StackLayout backgroundColor="white" padding="10" width="200" height="135">
+									<Label text="{{ name }}" class="item-name" textWrap="false" />
+									<Label text="{{ desc }}" class="item-desc" textWrap="false" />
+								</StackLayout>
+							</StackLayout>
+						</lv:RadListView.itemTemplate>
+					</lv:RadListView>
+				</GridLayout>
+			</StackLayout>
+
+			<!-- Store Items -->
+
+			<StackLayout id="store" height="300" visibility="{{ storevisible }}">
+
+				<Label text="Featured store items" class="h2 asap m-20" textWrap="true"/>
+
+				<GridLayout rows="*">
+					<lv:RadListView id="list-view2" row="0" items="{{ ranks }}" marginRight="-2" itemLoading="{{ onItemLoading2 }}">
+						<lv:RadListView.listViewLayout>
+							<lv:ListViewStaggeredLayout scrollDirection="Horizontal" spanCount="1" />
+						</lv:RadListView.listViewLayout>
+						<lv:RadListView.itemTemplate>
+							<StackLayout margin="15" borderRadius="10">
+								<Image src="{{ image }}" width="200" height="120" stretch="aspectFill" />
+								<StackLayout backgroundColor="white" padding="10" width="200" height="100">
+									<Label text="{{ name }}" class="item-name" textWrap="true" />
+									<Label text="{{ '$' + price }}" class="item-price" />
+								</StackLayout>
+							</StackLayout>
+						</lv:RadListView.itemTemplate>
+					</lv:RadListView>
+				</GridLayout>
+
+			</StackLayout>
+
+			<!-- Hyperlink Items -->
+
+			<StackLayout id="hyperlinks" height="200">
+				<Label text="Hyperlinks" class="h2 asap m-20" textWrap="true"/>
+				<GridLayout rows="*">
+					<lv:RadListView id="list-view1" row="0" items="{{ links }}" marginRight="-2" itemLoading="{{ onItemLoading }}">
+						<lv:RadListView.listViewLayout>
+							<lv:ListViewStaggeredLayout scrollDirection="Horizontal" spanCount="1" />
+						</lv:RadListView.listViewLayout>
+						<lv:RadListView.itemTemplate>
+							<StackLayout margin="15" borderRadius="10" visibility="{{ visible }}" id="{{ name }}" tap="onHyperlink">
+								<StackLayout backgroundColor="white" padding="10" width="200" height="220">
+									<Label text="{{ name }}" class="item-name" textWrap="false" />
+									<Label text="{{ desc }}" class="item-desc2" textWrap="true" />
+								</StackLayout>
+							</StackLayout>
+						</lv:RadListView.itemTemplate>
+					</lv:RadListView>
+				</GridLayout>
+			</StackLayout>
+
+		</FlexboxLayout>
+
+	</ScrollView>
+
+	</PullRefresh:PullToRefresh>
+
+</Page>

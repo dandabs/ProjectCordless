@@ -1,0 +1,108 @@
+.mainactionbar {
+    background-color:  #3C5AFD;
+    color: white;
+}
+
+.icon{
+    font-family: 'Linearicons Free', 'Linearicons-Free';
+    /*font-weight: 900;*/
+    font-size: 15;
+}
+
+.item-name {
+    color: #303c47;
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+    padding: 2;
+}
+
+.item-desc {
+    color: #303c47;
+    font-family: 'Open Sans', 'OpenSans-Regular';
+    padding: 2;
+}
+
+.item-desc2 {
+    color: #303c47;
+    font-family: 'Open Sans', 'OpenSans-Regular';
+    padding: 2;
+    font-size: 12;
+    text-align: center;
+}
+
+.item-price {
+    color: #c40404;
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+    padding: 2;
+}
+
+.home-panel{
+    vertical-align: center;
+    font-size: 20;
+    margin: 15;
+}
+
+.description-label{
+    margin-bottom: 15;
+}
+
+.card {
+    background-color: #fff;
+    color: #4d4d4d;
+    margin: 15 15 0;
+}
+.card-layout {
+    padding: 20;
+}
+.card-layout .h1 {
+    margin-bottom: 15;
+}
+
+.locationCity {
+    color: White;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: bold;
+    font-size: 30;
+}
+
+.locationCountry {
+    color: darkgray;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-size: 18;
+    text-transform: uppercase;
+}
+
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Asap&display=swap');
+
+.heading {
+    background-image: url("https://static.planetminecraft.com/files/resource_media/screenshot/1732/2017-08-08-21-54-59-1502200550_lrg.png");
+    height: 100;
+    text-align: center;
+}
+
+.headingtext {
+    color: white;
+}
+
+/* Fonts */
+
+.openSansRegular {
+    font-family: 'Open Sans', 'OpenSans-Regular';
+}
+
+.openSansBold {
+    font-family: 'Open Sans', 'OpenSans-Bold';
+}
+
+.nordicaPlus {
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+}
+
+.asap {
+    font-family: 'Asap', 'Asap-Regular';
+}
+
+.abeezee {
+    font-family: 'ABeeZee', 'ABeeZee-Regular';
+}

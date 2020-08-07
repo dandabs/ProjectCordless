@@ -1,0 +1,58 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<!--
+The StackLayout stacks UI components on the screen—either vertically or horizontally.
+In this case, the StackLayout does vertical stacking; you can change the stacking to
+horizontal by applying a orientation="horizontal" attribute to the <StackLayout> element.
+You can learn more about NativeScript layouts at
+https://docs.nativescript.org/ui/layout-containers.
+
+These components make use of several CSS class names that are part of the NativeScript
+core theme, such as p-20, btn, h2, and text-center. You can view a full list of the
+class names available for styling your app at https://docs.nativescript.org/ui/theme.
+-->
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+    xmlns:Card="nativescript-cardview" 
+    xmlns:mdc="nativescript-material-cardview" 
+    xmlns:lv="nativescript-ui-listview"
+    navigatingTo="onNavigatingTo"
+	longPress="onAddServer"
+    class="page">
+    <Page.actionBar>
+        <ActionBar title="Kodoresu" icon="" class="action-bar mainactionbar">
+          <ActionItem ios.systemIcon="10" android.systemIcon="ic_menu_edit" ios.position="right" tap="onSettings"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+
+	<GridLayout rows="*" xmlns:lv="nativescript-ui-listview" xmlns:img="nativescript-image" height="100%">
+		<lv:RadListView id="list-view" row="0" items="{{ servers }}" marginRight="-2">
+			<lv:RadListView.listViewLayout>
+				<lv:ListViewGridLayout scrollDirection="Vertical" itemHeight="200" spanCount="1" />
+			</lv:RadListView.listViewLayout>
+			<lv:RadListView.itemTemplate>
+				<GridLayout rows="*" backgroundColor="White" tap="onServerSelect" id="{{ Id }}">
+					<GridLayout rows="*" columns="*" margin="0">
+						<ios>
+							<Image src="{{ Displayimageurl }}" stretch="aspectFill" />
+						</ios>
+						<android>
+							<img:Img horizontalAlignment="stretch" height="180" src="{{ imageSrc }}"/>
+						</android>
+						<GridLayout verticalAlignment="bottom">
+							<StackLayout paddingTop="8" paddingBottom="8" paddingLeft="16" paddingRight="16">
+								<Label text="{{ Displayname }}" class="locationCity" />
+								<Label text="{{ players + ' players' }}" class="locationCountry" />
+							</StackLayout>
+						</GridLayout>
+					</GridLayout>
+				</GridLayout>
+			</lv:RadListView.itemTemplate>
+		</lv:RadListView>
+	</GridLayout>
+
+</Page>

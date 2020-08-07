@@ -1,0 +1,10 @@
+.mainactionbar {
+    background-color:  #3C5AFD;
+    color: white;
+}
+
+.button {
+    background-color: rgb(65, 163, 255);
+    color: white;
+    border-radius: 50;
+}

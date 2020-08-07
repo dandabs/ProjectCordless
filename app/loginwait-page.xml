@@ -1,0 +1,25 @@
+<Page class="page" loaded="onPageLoaded" navigatingTo="onPageLoaded" xmlns="http://www.nativescript.org/tns.xsd">
+        <ActionBar title="Login" icon="" class="action-bar"></ActionBar>
+
+        <FlexboxLayout class="page">
+        <StackLayout class="form">
+
+        <Label class="header" text="Minecraft Account Verification"></Label>
+        <Label textWrap="true" class="center break" text="To log into Kodoresu, you must authenticate yourself by joining a Minecraft Java Edition server and typing a command in chat."></Label>
+        <Label textWrap="true" class="center " text="Please join the following server using the account you provided in the previous step:"></Label>
+        <Label textWrap="true" class="center bold break" text="116.203.95.196:1234"></Label>
+        <Label textWrap="true" class="center" text="And in chat, type:"></Label>
+        <Label textWrap="true" class="center bold break" text="{{ '/kodoresu ' + authcode }}"></Label>
+        <Label textWrap="true" class="center" text="Then tap the verify button below."></Label>
+
+<StackLayout class="input-field">
+</StackLayout>
+
+<StackLayout class="input-field">
+<Button text="Verify account" tap="onLogin" class="btn btn-primary"></Button>
+</StackLayout>
+
+        </StackLayout>
+        </FlexboxLayout>
+
+</Page>

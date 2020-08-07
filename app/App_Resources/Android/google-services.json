@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "260643210239",
+    "firebase_url": "https://thekodoresu.firebaseio.com",
+    "project_id": "thekodoresu",
+    "storage_bucket": "thekodoresu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260643210239:android:ad14525ab29c76c3605dca",
+        "android_client_info": {
+          "package_name": "net.danielonline.kodoresu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260643210239-k8beltf3bnfc8ah4ftasoquk0sobb5to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVo4QefU-JD3g5X1qKURWYEFLp9zB6vas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260643210239-k8beltf3bnfc8ah4ftasoquk0sobb5to.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260643210239-a47ag1h2de8aanc57rclbev0eetb7p70.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.danielonline.kodoresu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

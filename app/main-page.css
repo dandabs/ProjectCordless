@@ -1,0 +1,36 @@
+mdccardview {
+    ripple-color: blue;
+    elevation: 4;
+}
+
+ActionBar {
+    background-color:  #3C5AFD;
+    color: white;
+}
+
+.mainactionbar {
+    background-color:  #3C5AFD;
+    color: white;
+}
+
+.locationCity {
+    color: White;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: bold;
+    font-size: 30;
+}
+
+.locationCountry {
+    color: darkgray;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-size: 18;
+    text-transform: uppercase;
+}
+
+.page {
+    background-color: rgb(46, 46, 46);
+}
+
+.taphighlight:highlighted{
+    color:#00A3FF;
+}

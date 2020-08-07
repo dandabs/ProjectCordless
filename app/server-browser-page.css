@@ -1,0 +1,10 @@
+.mainactionbar {
+    background-color:  #3C5AFD;
+    color: white;
+}
+
+.icon{
+    font-family: 'icomoon';
+    vertical-align: center;
+    margin: 6;
+}

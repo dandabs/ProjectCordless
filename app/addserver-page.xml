@@ -1,0 +1,22 @@
+<Page class="page" loaded="onNavigatingTo">
+        <ActionBar title="Add Server" icon="" class="action-bar mainactionbar"></ActionBar>
+
+        <FlexboxLayout class="page">
+        <StackLayout class="form">
+
+        <Label class="header" text="Adding New Server..."></Label>
+
+<StackLayout class="input-field">
+<TextField id="server" hint="Enter the server ID for your desired server." class="input input-border" maxLength="16" autocorrect="false" returnPress="onLogin"></TextField>
+</StackLayout>
+
+<StackLayout class="input-field">
+<Button text="Add" tap="onAdd" class="btn btn-primary"></Button>
+<Label text="{{ label }}" visibility="{{ vis }}"></Label>
+<Button text="Cancel" tap="onCancel" class="btn btn-primary"></Button>
+</StackLayout>
+
+        </StackLayout>
+        </FlexboxLayout>
+
+</Page>

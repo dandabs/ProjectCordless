@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="Preferences" icon="" class="action-bar mainactionbar">
+          <ActionItem ios.systemIcon="14" android.systemIcon="ic_menu_edit" ios.position="left" tap="onHome"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+
+<StackLayout id="container" verticalAlignment="bottom">
+
+<Button text="Log out" class="btn btn-primary btn-active button" tap="onLogout"></Button>
+
+</StackLayout>
+
+</Page>
